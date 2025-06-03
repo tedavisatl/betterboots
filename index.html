@@ -2,87 +2,133 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BETTERBOOTS Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
       padding: 0;
-      background-color: #ffffff;
-      color: #111111;
-      font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-      min-height: 100vh;
-      padding: 60px 20px;
-      text-align: center;
+      box-sizing: border-box;
     }
-
-    h1 {
-      font-size: 48px;
-      font-weight: 700;
-      margin-bottom: 20px;
-      letter-spacing: -1px;
-    }
-
-    p {
-      font-size: 20px;
-      max-width: 600px;
-      margin-bottom: 40px;
-      line-height: 1.6;
-    }
-
-    form {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    input[type="email"] {
-      padding: 12px;
-      font-size: 16px;
-      width: 300px;
-      max-width: 80%;
-      border: 1px solid #ccc;
-      border-radius: 4px;
-      margin-bottom: 10px;
-    }
-
-    input[type="submit"] {
-      padding: 12px 24px;
-      font-size: 16px;
-      border: none;
+    body {
       background-color: #000;
       color: #fff;
-      border-radius: 4px;
+      font-family: 'Barlow Condensed', sans-serif;
+      line-height: 1.6;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1.5rem 3rem;
+      border-bottom: 1px solid #333;
+    }
+    header img {
+      height: 50px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin-left: 2rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      font-size: 0.9rem;
+    }
+    .hero {
+      padding: 4rem 3rem;
+      text-align: center;
+    }
+    .hero h1 {
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      letter-spacing: 1px;
+    }
+    .hero p {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: auto;
+      color: #aaa;
+    }
+    section {
+      padding: 3rem;
+      border-top: 1px solid #222;
+    }
+    section h2 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+    }
+    section p {
+      font-size: 1.1rem;
+      color: #ccc;
+      max-width: 700px;
+    }
+    .signup {
+      text-align: center;
+      margin-top: 2rem;
+    }
+    .signup input[type="email"] {
+      padding: 0.8rem;
+      border: none;
+      width: 250px;
+      margin-right: 10px;
+    }
+    .signup button {
+      padding: 0.8rem 1.5rem;
+      background-color: white;
+      color: black;
+      font-weight: bold;
+      border: none;
       cursor: pointer;
-      transition: background 0.2s ease;
     }
-
-    input[type="submit"]:hover {
-      background-color: #333;
-    }
-
     footer {
-      margin-top: 60px;
-      font-size: 14px;
-      color: #666;
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #555;
+      border-top: 1px solid #111;
     }
   </style>
 </head>
 <body>
-  <h1>BETTERBOOTS Project</h1>
-  <p>Empowering the next generation through better access, resources, and opportunity. A mission born from action, rooted in community, and fueled by belief.</p>
 
-  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-    <input type="email" name="email" placeholder="Enter your email" required />
-    <input type="submit" value="Join the Movement" />
-  </form>
+  <header>
+    <img src="logo.png" alt="BETTERBOOTS logo">
+    <nav>
+      <a href="#mission">Mission</a>
+      <a href="#impact">Impact</a>
+      <a href="#signup">Join Us</a>
+    </nav>
+  </header>
+
+  <div class="hero">
+    <h1>Better Boots. Better Futures.</h1>
+    <p>The BETTERBOOTS Project exists to equip the next generation with tools, education, and purpose — so they can stand strong and rise together.</p>
+  </div>
+
+  <section id="mission">
+    <h2>Our Mission</h2>
+    <p>We’re redefining what it means to “pull yourself up by your bootstraps.” Through direct action in education, public safety, and youth empowerment, we deliver real resources to real people — from scholarships and school supplies to mentorship and after-school programs.</p>
+  </section>
+
+  <section id="impact">
+    <h2>Community First</h2>
+    <p>We give where we live. Every donation and every commission kickback goes straight into local schools, students, and families — starting here in Georgia. Our first campaign? 500 pairs of back-to-school shoes. More to come.</p>
+  </section>
+
+  <section id="signup">
+    <h2>Join The Movement</h2>
+    <p>If you believe in creating opportunity — not just talking about it — drop your email below. Let’s build this together.</p>
+    <div class="signup">
+      <input type="email" placeholder="Enter your email" />
+      <button>Sign Up</button>
+    </div>
+  </section>
 
   <footer>
-    &copy; 2025 BETTERBOOTS Project, Inc.
+    &copy; 2025 BETTERBOOTS Project. All rights reserved.
   </footer>
+
 </body>
 </html>
