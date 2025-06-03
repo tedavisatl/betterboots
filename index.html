@@ -4,131 +4,118 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BETTERBOOTS Project</title>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;700&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
     body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
       background-color: #000;
       color: #fff;
-      font-family: 'Barlow Condensed', sans-serif;
-      line-height: 1.6;
+      text-align: center;
     }
     header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 1.5rem 3rem;
-      border-bottom: 1px solid #333;
+      padding: 2rem 1rem;
     }
-    header img {
-      height: 50px;
-    }
-    nav a {
-      color: #fff;
-      text-decoration: none;
-      margin-left: 2rem;
-      font-weight: 700;
-      text-transform: uppercase;
-      font-size: 0.9rem;
-    }
-    .hero {
-      padding: 4rem 3rem;
-      text-align: center;
-    }
-    .hero h1 {
-      font-size: 3rem;
+    img.logo {
+      max-width: 220px;
       margin-bottom: 1rem;
-      letter-spacing: 1px;
     }
-    .hero p {
+    h1 {
+      font-size: 2.5rem;
+      font-family: 'Anton', sans-serif;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+    p {
       font-size: 1.2rem;
       max-width: 700px;
-      margin: auto;
-      color: #aaa;
+      margin: 1rem auto;
+      line-height: 1.6;
     }
-    section {
-      padding: 3rem;
-      border-top: 1px solid #222;
+    .section {
+      padding: 3rem 1rem;
+      border-top: 1px solid #333;
     }
-    section h2 {
-      font-size: 2rem;
-      margin-bottom: 1rem;
-      text-transform: uppercase;
-    }
-    section p {
-      font-size: 1.1rem;
-      color: #ccc;
-      max-width: 700px;
-    }
-    .signup {
-      text-align: center;
+    .pillars {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 2rem;
       margin-top: 2rem;
     }
-    .signup input[type="email"] {
-      padding: 0.8rem;
-      border: none;
-      width: 250px;
-      margin-right: 10px;
+    .pillar {
+      flex: 1 1 200px;
+      max-width: 300px;
+      background: #111;
+      padding: 1.5rem;
+      border-radius: 6px;
     }
-    .signup button {
-      padding: 0.8rem 1.5rem;
-      background-color: white;
-      color: black;
+    .cta {
+      margin-top: 3rem;
+    }
+    .cta a {
+      display: inline-block;
+      background: #fff;
+      color: #000;
+      padding: 0.75rem 1.5rem;
       font-weight: bold;
-      border: none;
-      cursor: pointer;
-    }
-    footer {
-      text-align: center;
-      padding: 2rem;
-      font-size: 0.9rem;
-      color: #555;
-      border-top: 1px solid #111;
+      text-decoration: none;
+      border-radius: 4px;
+      text-transform: uppercase;
+      margin-top: 1rem;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <img src="logo.png" alt="BETTERBOOTS logo">
-    <nav>
-      <a href="#mission">Mission</a>
-      <a href="#impact">Impact</a>
-      <a href="#signup">Join Us</a>
-    </nav>
+    <img src="betterboots-logo.png" alt="BETTERBOOTS logo" class="logo" />
+    <h1>Not Everyone Has Straps</h1>
+    <p>
+      The BETTERBOOTS Project is a direct response to the myth of “pull yourself up by your bootstraps.”<br />
+      Not everyone has boots, let alone straps. We're here to change that — through action, education, and public safety.
+    </p>
   </header>
 
-  <div class="hero">
-    <h1>Better Boots. Better Futures.</h1>
-    <p>The BETTERBOOTS Project exists to equip the next generation with tools, education, and purpose — so they can stand strong and rise together.</p>
-  </div>
-
-  <section id="mission">
+  <section class="section">
     <h2>Our Mission</h2>
-    <p>We’re redefining what it means to “pull yourself up by your bootstraps.” Through direct action in education, public safety, and youth empowerment, we deliver real resources to real people — from scholarships and school supplies to mentorship and after-school programs.</p>
+    <p>
+      Inspire a generation and empower underserved communities. We invest in teachers, students, and public safety by
+      funneling 90% of our funds directly into the hands of those who serve and those who learn.
+    </p>
   </section>
 
-  <section id="impact">
-    <h2>Community First</h2>
-    <p>We give where we live. Every donation and every commission kickback goes straight into local schools, students, and families — starting here in Georgia. Our first campaign? 500 pairs of back-to-school shoes. More to come.</p>
-  </section>
-
-  <section id="signup">
-    <h2>Join The Movement</h2>
-    <p>If you believe in creating opportunity — not just talking about it — drop your email below. Let’s build this together.</p>
-    <div class="signup">
-      <input type="email" placeholder="Enter your email" />
-      <button>Sign Up</button>
+  <section class="section">
+    <h2>Our Pillars</h2>
+    <div class="pillars">
+      <div class="pillar">
+        <h3>📚 Education</h3>
+        <p>Scholarships, school supply drives, after-school business programs, and real-world prep for youth.</p>
+      </div>
+      <div class="pillar">
+        <h3>👟 Community</h3>
+        <p>Shoe drives, commission-based givebacks, and hyperlocal impact through real estate partners.</p>
+      </div>
+      <div class="pillar">
+        <h3>🚓 Public Safety</h3>
+        <p>Experiences and giveaways for teachers and officers, plus community bridging events.</p>
+      </div>
     </div>
   </section>
 
-  <footer>
-    &copy; 2025 BETTERBOOTS Project. All rights reserved.
-  </footer>
+  <section class="section">
+    <h2>Transparency & Impact</h2>
+    <p>
+      90% of all funds go directly to causes we serve.<br />
+      Board members are unpaid volunteers. The remaining 10% covers operational and tax-related expenses.
+    </p>
+  </section>
+
+  <section class="section cta">
+    <h2>Get Involved</h2>
+    <p>Sign up to follow our journey and get updates on how we’re making a difference in your community.</p>
+    <a href="#signup">Join the Movement</a>
+  </section>
 
 </body>
 </html>
