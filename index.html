@@ -4,121 +4,114 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BETTERBOOTS Project</title>
-  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
   <style>
-    body {
+    * {
       margin: 0;
-      font-family: 'Inter', sans-serif;
-      background-color: #000;
-      color: #fff;
-      text-align: center;
+      padding: 0;
+      box-sizing: border-box;
     }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(135deg, #b8d8f0, #fef6e4);
+      color: #000;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 2rem;
+    }
+
     header {
       padding: 2rem 1rem;
+      width: 100%;
     }
-    img.logo {
-      max-width: 220px;
-      margin-bottom: 1rem;
+
+    .logo {
+      max-width: 150px;
+      margin: 0 auto 1rem;
     }
+
     h1 {
-      font-size: 2.5rem;
-      font-family: 'Anton', sans-serif;
-      letter-spacing: 2px;
-      text-transform: uppercase;
+      font-family: 'Space Grotesk', sans-serif;
+      font-size: 3rem;
+      margin-bottom: 1rem;
+      letter-spacing: -1px;
     }
+
     p {
       font-size: 1.2rem;
       max-width: 700px;
-      margin: 1rem auto;
-      line-height: 1.6;
+      margin: 0 auto 2rem;
     }
-    .section {
-      padding: 3rem 1rem;
-      border-top: 1px solid #333;
-    }
-    .pillars {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 2rem;
+
+    .email-signup {
       margin-top: 2rem;
     }
-    .pillar {
-      flex: 1 1 200px;
-      max-width: 300px;
-      background: #111;
-      padding: 1.5rem;
-      border-radius: 6px;
-    }
-    .cta {
-      margin-top: 3rem;
-    }
-    .cta a {
-      display: inline-block;
-      background: #fff;
-      color: #000;
-      padding: 0.75rem 1.5rem;
-      font-weight: bold;
-      text-decoration: none;
+
+    input[type="email"] {
+      padding: 0.75rem;
+      border: none;
       border-radius: 4px;
-      text-transform: uppercase;
-      margin-top: 1rem;
+      width: 300px;
+      max-width: 80%;
+      margin-right: 0.5rem;
+      font-size: 1rem;
+    }
+
+    button {
+      padding: 0.75rem 1rem;
+      background: #000;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+
+    footer {
+      margin-top: auto;
+      padding: 2rem 0;
+      font-size: 0.9rem;
+      color: #555;
+    }
+
+    @media (max-width: 600px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+
+      input[type="email"] {
+        width: 100%;
+        margin-bottom: 1rem;
+      }
+
+      button {
+        width: 100%;
+      }
     }
   </style>
 </head>
 <body>
-
   <header>
-    <img src="betterboots-logo.png" alt="BETTERBOOTS logo" class="logo" />
-    <h1>Not Everyone Has Straps</h1>
+    <img src="your-logo.png" alt="BETTERBOOTS Logo" class="logo" />
+    <h1>BETTERBOOTS Project</h1>
     <p>
-      The BETTERBOOTS Project is a direct response to the myth of “pull yourself up by your bootstraps.”<br />
-      Not everyone has boots, let alone straps. We're here to change that — through action, education, and public safety.
+      A bold response to the “pull yourself up by your bootstraps” mantra. We’re here to inspire, equip, and empower communities through education and public safety.
     </p>
+
+    <div class="email-signup">
+      <form action="#" method="post">
+        <input type="email" placeholder="Enter your email for updates" required />
+        <button type="submit">Join the Movement</button>
+      </form>
+    </div>
   </header>
 
-  <section class="section">
-    <h2>Our Mission</h2>
-    <p>
-      Inspire a generation and empower underserved communities. We invest in teachers, students, and public safety by
-      funneling 90% of our funds directly into the hands of those who serve and those who learn.
-    </p>
-  </section>
-
-  <section class="section">
-    <h2>Our Pillars</h2>
-    <div class="pillars">
-      <div class="pillar">
-        <h3>📚 Education</h3>
-        <p>Scholarships, school supply drives, after-school business programs, and real-world prep for youth.</p>
-      </div>
-      <div class="pillar">
-        <h3>👟 Community</h3>
-        <p>Shoe drives, commission-based givebacks, and hyperlocal impact through real estate partners.</p>
-      </div>
-      <div class="pillar">
-        <h3>🚓 Public Safety</h3>
-        <p>Experiences and giveaways for teachers and officers, plus community bridging events.</p>
-      </div>
-    </div>
-  </section>
-
-  <section class="section">
-    <h2>Transparency & Impact</h2>
-    <p>
-      90% of all funds go directly to causes we serve.<br />
-      Board members are unpaid volunteers. The remaining 10% covers operational and tax-related expenses.
-    </p>
-  </section>
-
-  <section class="section cta">
-    <h2>Get Involved</h2>
-    <p>Sign up to follow our journey and get updates on how we’re making a difference in your community.</p>
-    <a href="#signup">Join the Movement</a>
-  </section>
-
+  <footer>
+    &copy; 2025 BETTERBOOTS Project, Inc. All rights reserved.
+  </footer>
 </body>
 </html>
-
-Major homepage redesign — added logo, mission, pillars
-
