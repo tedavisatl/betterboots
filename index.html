@@ -4,108 +4,114 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>BETTERBOOTS Project</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Space+Grotesk:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@300;600&display=swap" rel="stylesheet">
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
+      margin: 0;
       font-family: 'Inter', sans-serif;
-      background: linear-gradient(135deg, #b8d8f0, #fef6e4);
-      color: #000;
-      min-height: 100vh;
+      background: linear-gradient(135deg, #c9e7ff, #ffffff);
+      color: #111;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      text-align: center;
-      padding: 2rem;
+      min-height: 100vh;
     }
 
     header {
-      padding: 2rem 1rem;
-      width: 100%;
+      padding: 3rem 2rem;
+      text-align: center;
     }
 
     .logo {
-      max-width: 150px;
-      margin: 0 auto 1rem;
+      max-width: 200px;
+      height: auto;
+      margin-bottom: 1.5rem;
     }
 
     h1 {
-      font-family: 'Space Grotesk', sans-serif;
+      font-family: 'Anton', sans-serif;
       font-size: 3rem;
       margin-bottom: 1rem;
-      letter-spacing: -1px;
+      letter-spacing: 1px;
     }
 
-    p {
+    .mission {
       font-size: 1.2rem;
       max-width: 700px;
-      margin: 0 auto 2rem;
+      margin: 0 auto;
+      line-height: 1.6;
     }
 
-    .email-signup {
-      margin-top: 2rem;
+    .coming-soon {
+      font-weight: bold;
+      margin-top: 1.5rem;
+      font-size: 1.1rem;
+    }
+
+    .signup {
+      margin-top: 2.5rem;
     }
 
     input[type="email"] {
-      padding: 0.75rem;
-      border: none;
+      padding: 0.7rem;
+      width: 250px;
+      max-width: 90%;
+      border: 1px solid #aaa;
       border-radius: 4px;
-      width: 300px;
-      max-width: 80%;
-      margin-right: 0.5rem;
+      margin-right: 10px;
       font-size: 1rem;
     }
 
     button {
-      padding: 0.75rem 1rem;
-      background: #000;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
+      padding: 0.7rem 1.2rem;
       font-size: 1rem;
+      border: none;
+      background-color: #3182ce;
+      color: #fff;
+      border-radius: 4px;
       cursor: pointer;
     }
 
     footer {
       margin-top: auto;
-      padding: 2rem 0;
+      text-align: center;
+      padding: 1rem;
       font-size: 0.9rem;
-      color: #555;
+      color: #666;
     }
 
-    @media (max-width: 600px) {
+    @media screen and (max-width: 500px) {
       h1 {
-        font-size: 2.2rem;
+        font-size: 2.3rem;
       }
 
       input[type="email"] {
-        width: 100%;
         margin-bottom: 1rem;
       }
 
-      button {
-        width: 100%;
+      .signup {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="your-logo.png" alt="BETTERBOOTS Logo" class="logo" />
+    <img src="betterboots-logo.png" alt="BETTERBOOTS Logo" class="logo" />
     <h1>BETTERBOOTS Project</h1>
-    <p>
-      A bold response to the “pull yourself up by your bootstraps” mantra. We’re here to inspire, equip, and empower communities through education and public safety.
+    <p class="mission">
+      A direct response to the "pull yourself up by your bootstraps" mantra. Not everyone has straps — or boots.
+      BETTERBOOTS is here to provide resources, drive action, and ignite inspiration in education, public safety, and our communities.
+      90% of every dollar goes directly to the causes we serve. We are 100% volunteer-led.
     </p>
-
-    <div class="email-signup">
-      <form action="#" method="post">
-        <input type="email" placeholder="Enter your email for updates" required />
-        <button type="submit">Join the Movement</button>
+    <p class="coming-soon">
+      🚧 Site under construction. Big things coming. Stay tuned and sign up to be part of the launch!
+    </p>
+    <div class="signup">
+      <form action="https://formspree.io/f/mnqeblwl" method="POST">
+        <input type="email" name="email" placeholder="Enter your email" required />
+        <button type="submit">Notify Me</button>
       </form>
     </div>
   </header>
@@ -115,3 +121,4 @@
   </footer>
 </body>
 </html>
+
