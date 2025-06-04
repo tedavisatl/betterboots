@@ -2,156 +2,95 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>BETTERBOOTS Project</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Oswald:wght@500&display=swap" rel="stylesheet" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BETTERBOOTS</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet"/>
   <style>
-    /* Reset + base styles */
-    * {
+    body {
       margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    body, html {
-      height: 100%;
       font-family: 'Inter', sans-serif;
-      color: #fff;
       background: linear-gradient(-45deg, #0a0f29, #004d7a, #008793, #00bf72);
       background-size: 400% 400%;
       animation: gradientBG 15s ease infinite;
-      overflow-x: hidden;
+      color: #fff;
+      text-align: center;
+      padding: 60px 20px 100px;
     }
-
     @keyframes gradientBG {
       0% {background-position: 0% 50%;}
       50% {background-position: 100% 50%;}
       100% {background-position: 0% 50%;}
     }
-
-    header.hero {
-      text-align: center;
-      padding: 60px 20px 30px;
-      animation: fadeIn 1.5s ease-in-out;
-    }
-
-    .hero-logo {
-      max-width: 320px;
+    .logo {
+      max-width: 350px;
       width: 80%;
       height: auto;
-      margin: 0 auto 25px;
+      margin-bottom: 40px;
     }
-
-    h1 {
-      font-family: 'Oswald', sans-serif;
-      font-size: 2.8rem;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-    }
-
-    .tagline {
-      font-size: 1.2rem;
-      margin-top: 15px;
-      color: #f0f0f0;
-    }
-
-    section.content {
-      max-width: 800px;
-      margin: 40px auto;
-      padding: 0 20px;
-      text-align: center;
-      animation: fadeInUp 2s ease-in-out;
-    }
-
-    section.content h2 {
+    .mission {
       font-size: 1.6rem;
-      margin-bottom: 10px;
-      font-weight: bold;
-    }
-
-    section.content p {
-      font-size: 1.1rem;
-      color: #ddd;
+      max-width: 850px;
+      margin: 0 auto 40px;
       line-height: 1.6;
     }
-
-    .email-signup {
-      margin-top: 40px;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 10px;
-      animation: fadeIn 2.5s ease-in-out;
+    .coming-soon {
+      font-size: 1.3rem;
+      font-weight: bold;
+      margin-bottom: 25px;
     }
-
-    .email-signup input[type="email"] {
-      padding: 12px 16px;
-      font-size: 1rem;
-      border: none;
-      border-radius: 4px;
-      width: 100%;
-      max-width: 320px;
+    form {
+      max-width: 400px;
+      margin: 0 auto;
     }
-
-    .email-signup button {
-      padding: 12px 24px;
-      font-size: 1rem;
+    input[type="email"] {
+      padding: 12px;
+      width: 65%;
       border: none;
-      border-radius: 4px;
-      background: #ffffff;
+      border-radius: 5px;
+      margin-right: 10px;
+      font-size: 1rem;
+    }
+    button {
+      padding: 12px 20px;
+      border: none;
+      border-radius: 5px;
+      background-color: #fff;
       color: #004d7a;
       font-weight: bold;
       cursor: pointer;
-      transition: background 0.3s;
+      font-size: 1rem;
     }
-
-    .email-signup button:hover {
-      background: #e0e0e0;
+    button:hover {
+      background-color: #e6e6e6;
     }
-
-    footer {
-      margin-top: 50px;
-      padding: 20px;
-      text-align: center;
-      font-size: 0.9rem;
-      color: #aaa;
-    }
-
-    /* Animations */
-    @keyframes fadeIn {
-      from { opacity: 0; transform: translateY(-10px); }
-      to { opacity: 1; transform: translateY(0); }
-    }
-
-    @keyframes fadeInUp {
-      from { opacity: 0; transform: translateY(40px); }
-      to { opacity: 1; transform: translateY(0); }
+    @media (max-width: 600px) {
+      input[type="email"], button {
+        width: 100%;
+        margin: 5px 0;
+      }
+      form {
+        padding: 0 10px;
+      }
     }
   </style>
 </head>
 <body>
 
-  <header class="hero">
-    <img src="betterboots-logo.png" alt="BETTERBOOTS Logo" class="hero-logo" />
-    <h1>BETTERBOOTS PROJECT</h1>
-    <p class="tagline">A bold response to "pull yourself up by your bootstraps."</p>
-  </header>
+  <img src="betterboots-logo.png" alt="BETTERBOOTS Logo" class="logo"/>
 
-  <section class="content">
-    <h2>COMING SOON</h2>
-    <p>We believe not everyone has straps — so we're building them. BETTERBOOTS equips communities through education, safety, and opportunity. Join the movement to make a difference — one student, one officer, one step at a time.</p>
+  <div class="mission">
+    Our mission is a direct response to the “pull yourself up by your bootstraps” mantra. Not everyone has the same — if any — straps. BETTERBOOTS exists to inspire and provide resources for the community through education, public safety, and real-world opportunities that empower the next generation.
+  </div>
 
-    <div class="email-signup">
-      <input type="email" placeholder="Enter your email to stay updated" />
-      <button>Notify Me</button>
-    </div>
-  </section>
+  <div class="coming-soon">
+    🚧 Coming Soon  
+    <br />We’re building something bold.
+  </div>
 
-  <footer>
-    &copy; 2025 BETTERBOOTS Project. All rights reserved.
-  </footer>
+  <form action="https://formspree.io/f/mwpbpbdj" method="POST">
+    <input type="email" name="email" placeholder="Your email" required/>
+    <button type="submit">Subscribe</button>
+  </form>
 
 </body>
 </html>
